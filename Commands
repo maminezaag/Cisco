@@ -1,1 +1,13 @@
 
+Reset securitymode sticky on a port-----------------------------------------------------------
+#show interfaces status 
+Gi1/0/21                     err-disabled 965
+#config t
+#interface GigabitEthernet 1/0/21
+#no switchport port-security mac-address sticky
+#switchport port-security mac-address sticky 
+#shutdown 
+#no shutdown
+#exit
+Gi1/0/21                     notconnect
+--------------------------------------------------------------------------------------------
