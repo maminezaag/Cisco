@@ -11,3 +11,10 @@ Gi1/0/21                     err-disabled 965
 #exit
 Gi1/0/21                     notconnect
 --------------------------------------------------------------------------------------------
+#show port-security
+Secure Port  MaxSecureAddr  CurrentAddr  SecurityViolation  Security Action
+                (Count)       (Count)          (Count)
+#show port-security interface Gi1/0/34
+Port Security              : Enabled
+Port Status                : Secure-up
+Violation Mode        
